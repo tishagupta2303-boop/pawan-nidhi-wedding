@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Wedding of Pawan & Nidhi</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- OPENING ENVELOPE -->
+    <section id="opening-screen">
+
+        <div class="envelope-scene">
+
+            <div class="envelope" id="envelope">
+
+                <div class="envelope-back"></div>
+
+                <div class="letter-glow"></div>
+
+                <div class="envelope-letter">
+                    <span class="letter-heart">♥</span>
+                </div>
+
+                <div class="envelope-front"></div>
+
+                <div class="envelope-flap"></div>
+
+                <button id="open-button" class="gold-button">
+                    Tap to Open
+                </button><audio id="wedding-music" loop preload="auto">
+    <source
+        src="asset/andriih-wedding-wedding-music-601619.mp3"
+        type="audio/mpeg"
+    >
+</audio>
+
+            </div>
+
+        </div>
+
+        <p class="opening-caption">A beautiful beginning awaits</p>
+
+    </section>
+
+
+    <!-- WEBSITE CONTENT -->
+    <main id="wedding-content" class="hidden">
+
+        <!-- MAIN HERO IMAGE: NO EXTRA TEXT -->
+        <section class="hero-section" id="home">
+
+            <img
+                src="asset/fulmain-hero.jpg"
+                alt="Pawan and Nidhi wedding invitation"
+                class="hero-image"
+            >
+
+            <a href="#wedding-wording" class="scroll-down">
+                <span>SCROLL TO DISCOVER</span>
+                <span class="scroll-arrow">↓</span>
+            </a>
+
+        </section>
+
+
+        <!-- WEDDING WORDING -->
+        <section class="wedding-wording section reveal" id="wedding-wording">
+
+            <span class="decorative-star">✧</span>
+
+            <p>
+                Two hearts, one beautiful beginning.
+            </p>
+
+            <p>
+                A promise of love, a lifetime of togetherness.
+            </p>
+
+            <p>
+                Surrounded by blessings, united by love.
+            </p>
+
+            <p>
+                Our forever begins on 11 December 2026.
+            </p>
+
+            <span class="decorative-star">✧</span>
+
+        </section>
+
+
+        <!-- MEET THE COUPLE -->
+        <section class="couple-section section">
+
+            <p class="eyebrow reveal">TWO HEARTS, ONE JOURNEY</p>
+
+            <h2 class="section-title reveal">Meet the Couple</h2>
+
+
+            <!-- BRIDE FIRST -->
+            <article class="person-card reveal">
+
+                <div class="person-frame">
+
+                    <img
+                        src="asset/Bride.jpg.jpeg"
+                        alt="Bride Nidhi"
+                        class="person-photo"
+                    >
+
+                </div>
+
+                <div class="person-details">
+
+                    <p class="person-label">THE BRIDE</p>
+
+                    <h3>Nidhi Ramji Gupta</h3>
+
+                    <div class="gold-divider"></div>
+
+                    <p class="relation-label">DAUGHTER OF</p>
+
+                    <p class="family-name">
+                        Ramji Harishankar Gupta
+                    </p>
+
+                    <p class="relation-label">AND</p>
+
+                    <p class="family-name mother-name">
+                        Hema Ramji Gupta
+                    </p>
+
+                    <p class="residence">
+                        Ichalkaranji, Maharashtra
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- GROOM SECOND -->
+            <article class="person-card groom-card reveal">
+
+                <div class="person-frame">
+
+                    <img
+                        src="asset/groom.jpg.jpeg"
+                        alt="Groom Pawan"
+                        class="person-photo"
+                    >
+
+                </div>
+
+                <div class="person-details">
+
+                    <p class="person-label">THE GROOM</p>
+
+                    <h3>Pawan Lal Bahadur Gupta</h3>
+
+                    <div class="gold-divider"></div>
+
+                    <p class="relation-label">SON OF</p>
+
+                    <p class="family-name">
+                        Lal Bahadur Gupta
+                    </p>
+
+                    <p class="relation-label">AND</p>
+
+                    <p class="family-name mother-name">
+                        Munni Devi
+                    </p>
+
+                    <p class="residence">
+                        Ichalkaranji, Maharashtra
+                    </p>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- SCRATCH TO REVEAL -->
+        <section class="scratch-section section reveal">
+
+            <p class="eyebrow">A LITTLE SURPRISE</p>
+
+            <h2 class="section-title">Scratch to Reveal</h2>
+
+            <p class="section-description">
+                Reveal the date hidden inside our heart.
+            </p>
+
+            <div class="scratch-stage">
+
+                <div class="heart-card">
+
+                    <!-- Hidden until scratch threshold -->
+                    <div class="heart-reveal-content">
+
+                        <span class="revealed-heart">♥</span>
+
+                        <p class="date-small">SAVE THE DATE</p>
+
+                        <h3>11 December</h3>
+
+                        <p class="date-year">2026</p>
+
+                        <div class="gold-divider"></div>
+
+                        <p class="couple-signature">
+                            Pawan & Nidhi
+                        </p>
+
+                    </div>
+
+                    <canvas id="scratch-canvas"></canvas>
+
+                    <div id="sparkle-layer"></div>
+
+                </div>
+
+            </div>
+
+            <p class="scratch-hint">
+                ✧ Gently scratch the golden heart ✧
+            </p>
+
+        </section>
+
+
+        <!-- WEDDING FUNCTIONS -->
+        <section class="functions-section section">
+
+            <p class="eyebrow reveal">THE CELEBRATIONS</p>
+
+            <h2 class="section-title reveal">Wedding Functions</h2>
+
+
+            <!-- MEHENDI -->
+            <article class="function-card reveal">
+
+                <span class="function-number">01</span>
+
+                <p class="function-label">8 DECEMBER 2026</p>
+
+                <h3>Mehendi</h3>
+
+                <div class="gold-divider"></div>
+
+                <p class="function-description">
+                    Beautiful henna, happy hearts and precious
+                    moments with family.
+                </p>
+
+                <p class="function-venue">Venue: At Home</p>
+
+            </article>
+
+
+            <!-- HALDI -->
+            <article class="function-card reveal">
+
+                <span class="function-number">02</span>
+
+                <p class="function-label">9 DECEMBER 2026</p>
+
+                <h3>Haldi</h3>
+
+                <div class="gold-divider"></div>
+
+                <p class="function-description">
+                    A joyful tradition filled with blessings,
+                    laughter and golden memories.
+                </p>
+
+                <p class="function-venue">Venue: At Home</p>
+
+            </article>
+
+
+            <!-- WEDDING -->
+            <article class="function-card wedding-function reveal">
+
+                <span class="function-number">03</span>
+
+                <p class="function-label">THE BIG DAY</p>
+
+                <h3>The Wedding</h3>
+
+                <div class="gold-divider"></div>
+
+                <p class="function-description">
+                    Join us as Pawan and Nidhi begin their
+                    beautiful journey together.
+                </p>
+
+                <p class="event-detail">
+                    <span>Date</span>
+                    11 December 2026
+                </p>
+
+                <p class="event-detail">
+                    <span>Time</span>
+                    7:30 PM
+                </p>
+
+                <p class="event-detail">
+                    <span>Venue</span>
+                    Khandelwal Hall, Ichalkaranji
+                </p>
+
+                <a
+                    class="gold-button map-button"
+                    href="https://www.google.com/maps/search/?api=1&query=Khandelwal+Hall+Bhavan%2C+Vardhman+Society%2C+Ichalkaranji"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Open Google Maps ↗
+                </a>
+
+            </article>
+
+        </section>
+
+
+        <!-- COUNTDOWN -->
+        <section class="countdown-section section reveal">
+
+            <p class="eyebrow">THE MOMENT IS APPROACHING</p>
+
+            <h2 class="section-title">Counting Every Moment</h2>
+
+            <p class="section-description">
+                Until the beginning of forever.
+            </p>
+
+            <div class="countdown-grid">
+
+                <div class="countdown-box">
+                    <span id="days">00</span>
+                    <p>DAYS</p>
+                </div>
+
+                <div class="countdown-box">
+                    <span id="hours">00</span>
+                    <p>HOURS</p>
+                </div>
+
+                <div class="countdown-box">
+                    <span id="minutes">00</span>
+                    <p>MINUTES</p>
+                </div>
+
+                <div class="countdown-box">
+                    <span id="seconds">00</span>
+                    <p>SECONDS</p>
+                </div>
+
+            </div>
+
+            <p id="countdown-message" class="countdown-message"></p>
+
+        </section>
+
+
+        <!-- GUEST OPINION -->
+        <section class="guest-section section reveal">
+
+            <p class="eyebrow">YOUR WORDS MEAN A LOT</p>
+
+            <h2 class="section-title">Leave Your Wishes</h2>
+
+            <p class="section-description">
+                Share your love and blessings with the couple.
+            </p>
+
+            <form id="guest-form">
+
+                <label for="guest-name">Your Name</label>
+
+                <input
+                    type="text"
+                    id="guest-name"
+                    name="guestName"
+                    placeholder="Enter your name"
+                    maxlength="80"
+                    required
+                >
+
+                <label for="guest-opinion">Your Opinion & Wishes</label>
+
+                <textarea
+                    id="guest-opinion"
+                    name="guestOpinion"
+                    placeholder="Write your lovely message..."
+                    rows="5"
+                    maxlength="1000"
+                    required
+                ></textarea>
+
+                <button type="submit" class="gold-button submit-button">
+                    Submit
+                </button>
+
+            </form>
+
+
+            <!-- THANK YOU -->
+            <div id="thank-you-message" class="thank-you-message hidden">
+
+                <span class="thank-you-heart">♥</span>
+
+                <h3>Thank You!</h3>
+
+                <p>
+                    Your wishes make our celebration even more special.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- FINAL WORDING -->
+        <section class="final-section section reveal">
+
+            <span class="decorative-star">✧</span>
+
+            <p>One beautiful day.</p>
+
+            <p>Two hearts.</p>
+
+            <h2>Forever Together.</h2>
+
+            <p class="final-date">11 December 2026</p>
+
+            <span class="decorative-star">✧</span>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="site-footer">
+            <p>Created by Shree</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
